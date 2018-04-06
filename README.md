@@ -8,7 +8,7 @@ etcd3 image based on Alpine Linux
 
 You can set the listen URLs for clients and peers:
 
-    docker run -d -p 2379:2379 -p 2380:2380 appcelerator/etcd --listen-client-urls http://localhost:2379 --advertise-client-urls http://localhost:2379 --listen-peer-urls=http://localhost:2380 --initial-advertise-peer-urls=http://localhost:2380
+    docker run -d -p 2379:2379 -p 2380:2380 appcelerator/etcd --listen-client-urls http://0.0.0.0:2379 --advertise-client-urls http://0.0.0.0:2379 --listen-peer-urls=http://0.0.0.0:2380
 
 ## Swarm mode
 
